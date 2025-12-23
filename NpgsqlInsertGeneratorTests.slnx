@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="NpgsqlInsertGeneratorTests/NpgsqlInsertGeneratorTests.csproj" />
+  <Project Path="NpgsqlInsertOrReplaceGenerator/NpgsqlInsertOnConflictGenerators.csproj" />
+</Solution>
