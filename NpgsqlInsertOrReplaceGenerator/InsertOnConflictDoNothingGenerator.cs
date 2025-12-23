@@ -1,4 +1,5 @@
-﻿using System.Text;
+﻿#pragma warning disable EF1001 // Internal EF Core API usage.
+using System.Text;
 using Microsoft.EntityFrameworkCore.Update;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Update.Internal;
 

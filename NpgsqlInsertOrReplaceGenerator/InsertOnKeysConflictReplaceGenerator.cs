@@ -1,4 +1,5 @@
-﻿using System.Text;
+﻿#pragma warning disable EF1001 // Internal EF Core API usage.
+using System.Text;
 using Microsoft.EntityFrameworkCore.Update;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Update.Internal;
 
@@ -6,8 +7,8 @@ namespace NpgsqlInsertOnConflictGenerators;
 
 public class InsertOnKeysConflictReplaceGenerator : NpgsqlUpdateSqlGenerator, IUpdateSqlGenerator
 {
-    public InsertOnKeysConflictReplaceGenerator(UpdateSqlGeneratorDependencies dependencies) : base(dependencies)
-    {
+  public InsertOnKeysConflictReplaceGenerator(UpdateSqlGeneratorDependencies dependencies) : base(dependencies)
+  {
     }
 
     protected override void AppendInsertCommand(StringBuilder commandStringBuilder, string name, string? schema, IReadOnlyList<IColumnModification> writeOperations,
